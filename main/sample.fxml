@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controller">
+   <children>
+      <AnchorPane id="left" prefHeight="600.0" prefWidth="300.0">
+         <children>
+            <Label layoutX="22.0" layoutY="20.0" text="ADAM &amp; KRZYSZTOF" textFill="#293250">
+               <font>
+                  <Font name="Lato Semibold" size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="82.0" layoutY="65.0" text="Z nami super wakacje!" textFill="#293250">
+               <font>
+                  <Font name="Lato Semibold" size="14.0" />
+               </font>
+            </Label>
+            <VBox layoutY="100.0" prefHeight="500.0" prefWidth="300.0">
+               <children>
+                  <Button id="category_button" fx:id="morze" mnemonicParsing="false" onAction="#morzeClick" prefHeight="100.0" prefWidth="300.0" text="MORZE" textFill="#293250">
+                     <font>
+                        <Font name="Lato Semibold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button id="category_button" fx:id="gory" mnemonicParsing="false" onAction="#goryClick" prefHeight="100.0" prefWidth="300.0" text="GÓRY" textFill="#293250">
+                     <font>
+                        <Font name="Lato Semibold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button id="category_button" fx:id="stolica" mnemonicParsing="false" onAction="#stolicaClick" prefHeight="100.0" prefWidth="300.0" text="STOLICA" textFill="#293250">
+                     <font>
+                        <Font name="Lato Semibold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button id="category_button" fx:id="biwak" mnemonicParsing="false" onAction="#biwakClick" prefHeight="100.0" prefWidth="300.0" text="BIWAK" textFill="#293250">
+                     <font>
+                        <Font name="Lato Semibold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button id="category_button" fx:id="namioty" mnemonicParsing="false" onAction="#namiotyClick" prefHeight="100.0" prefWidth="300.0" text="NAMIOTY" textFill="#293250">
+                     <font>
+                        <Font name="Lato Semibold" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="300.0" prefHeight="600.0" prefWidth="600.0">
+         <children>
+            <ImageView id="right" fx:id="img" fitHeight="600.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" />
+            <Button id="left_slider" layoutX="14.0" layoutY="269.0" mnemonicParsing="false" onAction="#leftClick" text="&lt;" textFill="#293250">
+               <font>
+                  <Font name="Lato Semibold" size="32.0" />
+               </font></Button>
+            <Button id="right_slider" layoutX="523.0" layoutY="269.0" mnemonicParsing="false" onAction="#rightClick" text="&gt;" textFill="#293250">
+               <font>
+                  <Font name="Lato Semibold" size="32.0" />
+               </font></Button>
+            <Label fx:id="category_label" layoutX="136.0" layoutY="280.0" text="WYBIERZ KATEGORIE" textFill="#293250">
+               <font>
+                  <Font name="Lato Semibold" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

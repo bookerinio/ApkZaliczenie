@@ -1,0 +1,29 @@
+.button{
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+}
+
+#left {
+    -fx-background-color: #FFD55A;
+}
+
+#category_button {
+    -fx-background-color: #FFE66B;
+}
+
+#left_slider, #right_slider {
+    -fx-background-color: rgba(255, 255, 255, 0.5);
+    -fx-border-color: transparent;
+    -fx-background-radius: 50px;
+}
+
+#left_slider:hover, #right_slider:hover {
+    -fx-background-color: rgba(255, 255, 255, 1);
+}
+
+#category_button:hover {
+    -fx-background-color: #FFC441;
+
+}
